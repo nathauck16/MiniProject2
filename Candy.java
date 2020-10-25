@@ -9,16 +9,9 @@ Candy(){
   name = "";
 
 }
-
 Candy(String aName){
   name = aName;
 }
-
-/*
-Candy(String aName){
-  name = "";
-}
-*/
 
 //setterngetter
 public void setName(String name){
