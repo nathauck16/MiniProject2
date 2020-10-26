@@ -4,12 +4,12 @@ public class Candy{
 public String name;
 
 //constructors
-Candy(){
+public Candy(){
 
   name = "";
 
 }
-Candy(String aName){
+public Candy(String aName){
   name = aName;
 }
 
