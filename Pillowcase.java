@@ -20,6 +20,10 @@ candies.add("Kit Kat");
 
 }
 
+//random number between 1-100
+public void getCandy(){
+
+}
 
 
 
