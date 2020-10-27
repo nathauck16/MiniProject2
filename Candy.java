@@ -1,6 +1,7 @@
-public class Candy{
+class Candy{
 
 //variables
+//change to private
 public String name;
 
 //constructors
