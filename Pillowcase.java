@@ -6,25 +6,20 @@ class Pillowcase{
 
 //declare ArrayList
 private ArrayList<Candy> candies = new ArrayList<Candy>();
+//declare candy count variable
+private int candyCounter;
 
-//declare candy storage variable
-private int count;
-
-//pillowcase constructor
+//pillowcase object
 Pillowcase(){
-count = 0;
 
-//test adding to new array
-/*candies.add( new Candy("M&Ms") );
-candies.add( new Candy("Pink Starburst") );
-candies.add( new Candy("Hershey's bar") );
-candies.add( new Candy("Milky Way") );
-candies.add( new Candy("Twix") );
-candies.add( new Candy("Reese's") );
-candies.add( new Candy("Kit Kat") );
-*/
+  candyCounter = 0;
+  candies = new ArrayList<Candy>();
 
 }
+
+int getCounter(){
+    return candyCounter;
+  }
 
 //accessor for count variable
 public void setCount(int count){
@@ -33,9 +28,6 @@ public void setCount(int count){
 public int getCount(){
   return this.count;
 }
-
-//candyCounter
-
 
 //random number between 1-100
  void getCandy(){
@@ -59,32 +51,34 @@ public int getCount(){
      candies.add(new Candy("Reese's"));
    }else if(randomInt >= 94 &&randomInt <= 100){candies.add(new Candy("Kit Kat"));
    }
-
-   //candyCounter++;
+   candyCounter++;
 
 }
 
 public  printNumCandies(){
 
-String[] candyArray = {"M&Ms", "Pink Starburst", "Hershey's Bar", "Milky Way", "Twix", "Reese's", "Kit Kat" };
+    int[] candyTypeCount = new int[7];
 
-
-    //increase candy count
-    /*if(candies.get(0).getName().equals("M&Ms"));{
-      getCount[0] = 1;
-    }if(candies.get(1).getName().equals("Pink Starburst"));{
-      getCount[1] = 1;
-    }if(candies.get(2).getName().equals("Hershey's Bar"));{
-      getCount[2] = 1;
-    }if(candies.get(3).getName().equals("Milky Way"));{
-      getCount[3] = 1;
-    }if(candies.get(4).getName().equals("Twix"));{
-      getCount[4] = 1;
-    }if(candies.get(5).getName().equals("Reese's"));{
-      getCount[5] = 1;
-    }if(candies.get(6).getName().equals("Kit Kat"));{
-      getCount[6] = 1;
-    }*/
+    String[] candyList = {"M&Ms", "Pink Starburst", "Hershey's Bar", "Milky Way", "Twix", "Reese's", "Kit Kat" };
+    
+    for(int i = 0;i<candyTracker.size();i++ )
+        {
+        if(candies.get(0).getName().equals("M&Ms"));{
+          candyTypeCountv[0] = 1;
+        } else if(candies.get(1).getName().equals("Pink Starburst"));{
+          candyTypeCount[1]++;
+        } else if(candies.get(2).getName().equals("Hershey's Bar"));{
+          candyTypeCount[2]++;
+        } else if(candies.get(3).getName().equals("Milky Way"));{
+          getCount[3]++;
+        } else if(candies.get(4).getName().equals("Twix"));{
+          candyTypeCount[4]++;
+        } else if(candies.get(5).getName().equals("Reese's"));{
+          candyTypeCount[5]++;
+        } else if(candies.get(6).getName().equals("Kit Kat"));{
+          candyTypeCount[6]++;
+        }
+    }
 
 
 }

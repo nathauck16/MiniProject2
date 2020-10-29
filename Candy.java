@@ -9,26 +9,26 @@ This class creates candy variables
 private String name;
 
 //constructors
-public Candy(){
+ Candy(){
 
   name = "";
 
 }
-public Candy(String aName){
+ Candy(String aName){
   name = aName;
 }
 
 //setterngetter
-public void setName(String name){
+ void setName(String name){
   this.name = name;
 }
-public String getName(){
+ String getName(){
   return this.name;
 }
 
 //print method
 
 public void printName(){
-  System.out.println("Candy 1 is " + this.name);
+  System.out.println(this.name);
 }
 }
