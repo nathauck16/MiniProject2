@@ -16,6 +16,12 @@ class Main {
     System.out.println("How many houses should we trick or treat at?");
     int houseNum = s.nextInt;
     
+    While (houseNum > 0){
+      getCandy;
+      houseNum -=1;
+    }
+  
+    Candy printName;
     //Pillowcase getCandy;
 
   }

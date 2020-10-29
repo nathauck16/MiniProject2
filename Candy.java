@@ -1,8 +1,12 @@
 class Candy{
-
+/*
+This class creates candy variables
+@author Nat Hauck
+@
+*/
 //variables
 //change to private
-public String name;
+private String name;
 
 //constructors
 public Candy(){
@@ -23,6 +27,7 @@ public String getName(){
 }
 
 //print method
+
 public void printName(){
   System.out.println("Candy 1 is " + this.name);
 }
