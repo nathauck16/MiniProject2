@@ -67,8 +67,22 @@ System.out.println("Trick or Treat!");
 
 public void printNumCandies(){
 
-return this.count;
+String[] candyArray = {"M&Ms", "Pink Starburst", "Hershey's Bar", "Milky Way", "Twix", "Reese's", "Kit Kat" };
 
+
+if(candies.get(0).getName().equals("M&Ms"));{
+  candyCounter[0] + 1;
+} else if(candies.get(1).getName().equals("Pink Starburst"));{
+
+} else if(candies.get(2).getName().equals("Hershey's Bar"));{
+
+} else if(candies.get(3).getName().equals("Milky Way"));{
+
+} else if(candies.get(4).getName().equals("Twix"));{
+
+} else if(candies.get(5).getName().equals("Reese's"));{
+
+} else if(candies.get(6).getName().equals("Kit Kat"));
 }
 
 
