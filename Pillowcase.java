@@ -14,7 +14,7 @@ private int count;
 Pillowcase(){
 count = 0;
 
-
+//
 candies.add( new Candy("M&Ms") );
 candies.add( new Candy("Pink Starburst") );
 candies.add( new Candy("Hershey's bar") );
@@ -22,8 +22,6 @@ candies.add( new Candy("Milky Way") );
 candies.add( new Candy("Twix") );
 candies.add( new Candy("Reese's") );
 candies.add( new Candy("Kit Kat") );
-
-
 
 
 }
@@ -41,36 +39,34 @@ public int getCount(){
 //random number between 1-100
 public void getCandy(){
 
-Candy c = new Candy();
 System.out.println("Trick or Treat!");
 
-
-   int i = 0;
    Random r = new Random();
    int randomInt = r.nextInt(100) + 1;
 
-   while (i <= houseNum){
-        if (randomInt <= 10) {
-          c.setName("M&Ms");
-        } else if (randomInt <= 30) {
-          c.setName("Pink Starburst");
-        } else if (randomInt <= 47){
-          c.setName("Hershey's Bar");
-        } else if (randomInt <= 55){
-          c.setName("Milky Way");
-        } else if (randomInt <= 68){
-          c.setName("Twix");
-        } else if (randomInt <= 93){
-          c.setName("Reese's");
-        } else if (randomInt > 93){
-          c.setName("Kit Kat");
-        }
-        i = i + 1;
+    //adding candy to array list based on these ranges
+   if(randomInt>=1&&randomInt<=10){
+     Candy.add(new Candy("M&Ms"));
+   }else if(randomInt>=11&&randomInt<=30){
+     Candy.add(new Candy("Pink Starburst"));
+   }else if(randomInt>=31&&randomInt<=47){
+     Candy.add(new Candy("Hershey's Bar"));
+   }else if(randomInt>=48&&randomInt<=55){
+     Candy.add(new Candy("Milky Way"));
+   }else if(randomInt>=56&&randomInt<=68){
+     Candy.add(new Candy("Twix"));
+   }else if(randomInt>=69&&randomInt<=93){
+     Candy.add(new Candy("Reese's"));
+   }else if(randomInt>=94&&randomInt<=100){
+     Candy.add(new Candy("Kit Kat"));
    }
+   
+
 }
 
 public void printNumCandies(){
 
+size(Candy);
 
 }
 
