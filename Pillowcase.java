@@ -55,7 +55,7 @@ public int getCount(){
 
 }
 
-public  printNumCandies(){
+public void printNumCandies(){
 
     int[] candyTypeCount = new int[7];
 
@@ -63,22 +63,37 @@ public  printNumCandies(){
     
     for(int i = 0;i<candyTracker.size();i++ )
         {
-        if(candies.get(0).getName().equals("M&Ms"));{
-          candyTypeCountv[0] = 1;
-        } else if(candies.get(1).getName().equals("Pink Starburst"));{
+        if(candies.get(i).getName().equals("M&Ms"));
+        {
+          candyTypeCount[0] = 1;
+        } else if(candies.get(i).getName().equals("Pink Starburst"));
+        {
           candyTypeCount[1]++;
-        } else if(candies.get(2).getName().equals("Hershey's Bar"));{
+        } else if(candies.get(i).getName().equals("Hershey's Bar"));
+        {
           candyTypeCount[2]++;
-        } else if(candies.get(3).getName().equals("Milky Way"));{
-          getCount[3]++;
-        } else if(candies.get(4).getName().equals("Twix"));{
+        } else if(candies.get(i).getName().equals("Milky Way"));
+        {
+          candyTypeCount[3]++;
+        } else if(candies.get(i).getName().equals("Twix"));
+        {
           candyTypeCount[4]++;
-        } else if(candies.get(5).getName().equals("Reese's"));{
+        } else if(candies.get(i).getName().equals("Reese's"));
+        {
           candyTypeCount[5]++;
-        } else if(candies.get(6).getName().equals("Kit Kat"));{
+        } else if(candies.get(i).getName().equals("Kit Kat"));
+        {
           candyTypeCount[6]++;
         }
     }
+  for(int i=0;i<candyTypeCount.length;i++)
+  {
+    if(candyTypeCount[i]!=0)
+    {
+      System.out.println("We got " + candyTypeCount[i] + candyList[i]);
+    }
+  }
+
 
 
 }
