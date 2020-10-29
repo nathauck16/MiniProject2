@@ -67,22 +67,22 @@ void printNumCandies(){
         if(candies.get(i).getName().equals("M&Ms"));
         {
           candyTypeCount[0] = 1;
-        }else if(candies.get(i).getName().equals("Pink Starburst"));
+        }if(candies.get(i).getName().equals("Pink Starburst"));
         {
           candyTypeCount[1]++;
-        }else if(candies.get(i).getName().equals("Hershey's Bar"));
+        }if(candies.get(i).getName().equals("Hershey's Bar"));
         {
           candyTypeCount[2]++;
-        }else if(candies.get(i).getName().equals("Milky Way"));
+        }if(candies.get(i).getName().equals("Milky Way"));
         {
           candyTypeCount[3]++;
-        }else if(candies.get(i).getName().equals("Twix"));
+        }if(candies.get(i).getName().equals("Twix"));
         {
           candyTypeCount[4]++;
-        }else if(candies.get(i).getName().equals("Reese's"));
+        }if(candies.get(i).getName().equals("Reese's"));
         {
           candyTypeCount[5]++;
-        }else if(candies.get(i).getName().equals("Kit Kat"));
+        }if(candies.get(i).getName().equals("Kit Kat"));
         {
           candyTypeCount[6]++;
         }
@@ -94,8 +94,6 @@ void printNumCandies(){
       System.out.println("We got " + candyTypeCount[i] + candyList[i]);
     }
   }
-
-
 
 }
 }
