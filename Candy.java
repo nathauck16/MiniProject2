@@ -1,3 +1,4 @@
+import java.util.*;
 class Candy{
 /*
 This class creates candy variables

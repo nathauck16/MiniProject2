@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
-
+import java.util.*;
+import java.io.File;
 
 class Pillowcase{
 
@@ -55,7 +56,7 @@ public int getCount(){
 
 }
 
-public void printNumCandies(){
+void printNumCandies(){
 
     int[] candyTypeCount = new int[7];
 
@@ -66,22 +67,22 @@ public void printNumCandies(){
         if(candies.get(i).getName().equals("M&Ms"));
         {
           candyTypeCount[0] = 1;
-        } else if(candies.get(i).getName().equals("Pink Starburst"));
+        }else if(candies.get(i).getName().equals("Pink Starburst"));
         {
           candyTypeCount[1]++;
-        } else if(candies.get(i).getName().equals("Hershey's Bar"));
+        }else if(candies.get(i).getName().equals("Hershey's Bar"));
         {
           candyTypeCount[2]++;
-        } else if(candies.get(i).getName().equals("Milky Way"));
+        }else if(candies.get(i).getName().equals("Milky Way"));
         {
           candyTypeCount[3]++;
-        } else if(candies.get(i).getName().equals("Twix"));
+        }else if(candies.get(i).getName().equals("Twix"));
         {
           candyTypeCount[4]++;
-        } else if(candies.get(i).getName().equals("Reese's"));
+        }else if(candies.get(i).getName().equals("Reese's"));
         {
           candyTypeCount[5]++;
-        } else if(candies.get(i).getName().equals("Kit Kat"));
+        }else if(candies.get(i).getName().equals("Kit Kat"));
         {
           candyTypeCount[6]++;
         }
