@@ -38,10 +38,9 @@ public int getCount(){
 
 
 //random number between 1-100
-public void getCandy(){
+ void getCandy(){
 
-System.out.println("Trick or Treat!");
-
+   System.out.println("Trick or Treat!");
    Random r = new Random();
    int randomInt = r.nextInt(100) + 1;
 
@@ -61,29 +60,32 @@ System.out.println("Trick or Treat!");
    }else if(randomInt >= 94 &&randomInt <= 100){candies.add(new Candy("Kit Kat"));
    }
 
-   canyCounter++;
+   //candyCounter++;
 
 }
 
-public void printNumCandies(){
+public  printNumCandies(){
 
 String[] candyArray = {"M&Ms", "Pink Starburst", "Hershey's Bar", "Milky Way", "Twix", "Reese's", "Kit Kat" };
 
 
-if(candies.get(0).getName().equals("M&Ms"));{
-  candyCounter[0] + 1;
-} else if(candies.get(1).getName().equals("Pink Starburst"));{
+    //increase candy count
+    /*if(candies.get(0).getName().equals("M&Ms"));{
+      getCount[0] = 1;
+    }if(candies.get(1).getName().equals("Pink Starburst"));{
+      getCount[1] = 1;
+    }if(candies.get(2).getName().equals("Hershey's Bar"));{
+      getCount[2] = 1;
+    }if(candies.get(3).getName().equals("Milky Way"));{
+      getCount[3] = 1;
+    }if(candies.get(4).getName().equals("Twix"));{
+      getCount[4] = 1;
+    }if(candies.get(5).getName().equals("Reese's"));{
+      getCount[5] = 1;
+    }if(candies.get(6).getName().equals("Kit Kat"));{
+      getCount[6] = 1;
+    }*/
 
-} else if(candies.get(2).getName().equals("Hershey's Bar"));{
 
-} else if(candies.get(3).getName().equals("Milky Way"));{
-
-} else if(candies.get(4).getName().equals("Twix"));{
-
-} else if(candies.get(5).getName().equals("Reese's"));{
-
-} else if(candies.get(6).getName().equals("Kit Kat"));
 }
-
-
 }
