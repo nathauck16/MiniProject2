@@ -10,7 +10,7 @@ class Main {
       int houseNum = s.nextInt();
     
       for(int i = 0; i<houseNum; i ++){
-       Pillowcase p.getCandy;
+        p.getCandy();
       }
       System.out.println("We have " + p.getCount() + " candies");
     }
