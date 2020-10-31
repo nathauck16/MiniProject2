@@ -1,34 +1,31 @@
-import java.util.*;
-class Candy{
 /*
-This class creates candy variables
+This class holds accessor methods for the candy class
 @author Nat Hauck
 @
 */
 //variables
-//change to private
-private String name;
+
+class Candy{
+  private String name;
 
 //constructors
- Candy(){
+  Candy(){
+    name = "";
+  }
+  Candy(String aName){
+    name = aName;
+  }
 
-  name = "";
+  //setterngettermethod
+  void setName(String theName){
+    name = theName;
+  }
+  String getName(){
+    return name;
+  }
 
-}
- Candy(String aName){
-  name = aName;
-}
-
-//setterngetter
- void setName(String theName){
-  name = theName;
-}
- String getName(){
-   return name;
-}
-
-//print method
-void print(){
-  System.out.println(name);
-}
+  //print method
+  void print(){
+    System.out.println(name);
+  }
 }
