@@ -20,16 +20,15 @@ private String name;
 }
 
 //setterngetter
- void setName(String name){
-  this.name = name;
+ void setName(String theName){
+  name = theName;
 }
  String getName(){
-  return this.name;
+   return name;
 }
 
 //print method
-
-public void printName(){
-  System.out.println(this.name);
+void print(){
+  System.out.println(name);
 }
 }
