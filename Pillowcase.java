@@ -30,7 +30,7 @@ void getCandy(){
   int randomInt = r.nextInt(100)+1;
 
 //adding candy to array list based on these ranges
-  if (randomInt>=1 && randomInt<=10){
+   if (randomInt>=1 && randomInt<=10){
     candyTracker.add(new Candy("M&Ms"));
   }
   else if (randomInt>=11 && randomInt<=30){
@@ -82,7 +82,7 @@ void printNumCandies(){
     }
   }
 
-  System.out.println("We've got...");
+  System.out.println("We got...");
 
   if (numCandies[0]>0){
     System.out.println(numCandies[0] + " M&Ms");
