@@ -1,3 +1,9 @@
+/**
+This class calculates the random number to decide which candy we get, plus it tracks the # of each candy and total
+@author Nat Hauck
+@version 10.31.2020
+*/
+
 import java.util.ArrayList;
 import java.util.Random;
 

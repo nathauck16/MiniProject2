@@ -1,8 +1,9 @@
-/*
+/**
 This class holds accessor methods for the candy class
 @author Nat Hauck
-@
+@version 10.31.2020
 */
+
 //variables
 
 class Candy{

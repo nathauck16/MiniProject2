@@ -1,3 +1,9 @@
+/**
+This class holds the main method to run all of our other methods. it holds the scanner to take input from user. It is a simple model to calculate the probability of drawing each candy when going trick or treating.
+@author Nat Hauck
+@version 10.31.2020
+*/
+
 import java.util.Scanner;
 
 class Main {
