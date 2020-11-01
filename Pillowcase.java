@@ -19,11 +19,11 @@ Pillowcase(){
   candyTracker = new ArrayList<Candy>();
   candyNum = 0;
 }
-
+//Returns Candy #
 int getCandyNum(){
   return candyNum;
 }
-//random number between 1 and 100
+//generates a random number between 1 and 100
 void getCandy(){
   System.out.println("Trick or Treat!");
   Random r = new Random();
@@ -54,7 +54,7 @@ void getCandy(){
 
   candyNum ++;
 }
-
+//Prints every Candy
 void printNumCandies(){
   int[] numCandies = new int[7];
 
@@ -81,7 +81,7 @@ void printNumCandies(){
       numCandies[6] ++;
     }
   }
-
+// Prints the number of candies and states the name of the candy
   System.out.println("We got...");
 
   if (numCandies[0]>0){
