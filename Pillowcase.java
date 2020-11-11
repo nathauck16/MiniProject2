@@ -1,6 +1,7 @@
 /**
 This class calculates the random number to decide which candy we get, plus it tracks the # of each candy and total
-@author Nat Hauck
+Nat Hauck, Owen Lottman, Sam Deckel, John Thomas
+@author
 @version 10.31.2020
 */
 
@@ -20,6 +21,7 @@ Pillowcase(){
   candyNum = 0;
 }
 //Returns Candy #
+//@return returns candy number
 int getCandyNum(){
   return candyNum;
 }

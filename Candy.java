@@ -1,6 +1,7 @@
 /**
 This class holds accessor methods for the candy class
-@author Nat Hauck
+@author 
+Nat Hauck, Owen Lottman, Sam Deckel, John Thomas
 @version 10.31.2020
 */
 
@@ -21,6 +22,7 @@ class Candy{
   void setName(String theName){
     name = theName;
   }
+ // @reutrn return candy name
   String getName(){
     return name;
   }
